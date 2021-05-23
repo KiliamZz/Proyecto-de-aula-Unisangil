@@ -1,0 +1,522 @@
+﻿/*Inicio de nuestra hoja de estilos*/
+/*h1{
+        color: blueviolet;
+        font-size: 40px;
+}
+header{
+    background-color: cyan;
+}
+p{
+    color: darkorange;
+}
+
+#encabezado{
+    background-color: darkorange;
+}
+*/
+/*Vamos a trabajar sobre el header*/
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+/*Sistema de tamaños*/
+h1{
+font-size: 3.8rem;
+}
+h2{
+font-size: 3.4rem;
+}
+h3{
+font-size: 3rem;
+}
+h4{
+font-size: 2.6rem;
+}
+
+/*Utilidades*/
+img{
+    max-width: 100%;
+}
+.seccion{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.centrar_texto{
+    text-align: center;
+}
+.fw-300{
+font-weight: 300;
+}
+.d-block{
+    display: block !important;
+}
+/*header*/
+.site-header{
+    background-color: #bd8723;
+    padding: 0rem 0 3rem 0;
+}
+.site-header.inicio{
+ background-image: url(../img/logo_uni.png);
+    height: 47vh;
+    min-height: 20rem;
+    background-position: center;/*Para centrar la imagen*/
+    background-size: cover;/*cubre el 100% del tamaño disponible*/
+
+}
+
+.respuesta{
+    background-color: #d19f34f6;
+}
+
+.contenido-header{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.contenido-header h1{
+    color: #ffffff;
+    max-width: 60rem;
+    padding-bottom: 3rem;
+    line-height: 2;
+}
+.barra{
+    display: flex;
+    justify-content:space-between;
+    padding-top:1rem ;
+   /* padding-right: ; espacios de relleno
+    padding-bottom: ;
+    padding-left: ;*/
+    align-items: center;/*Solo funciona con display:flex*/
+      
+}
+.navegacion a, h5{
+    color: #ffffff;/*rgba tambien se puede*/
+    text-decoration: none;
+    margin-right: 2rem;
+    font-size: 1.8rem;
+}
+
+
+.nav2{
+
+    margin-top: 18rem;
+    background-color: #705601;
+}
+/*pseudoselector*/
+.navegacion a:last-of-type{/* al ultimo tipo del enlace no le de margen */
+    margin-right: 0;
+}
+.navegacion a:hover{
+    color: rgb(27, 6, 221);
+}
+
+.comunidad img:hover{
+   margin-top: 4rem; 
+}
+
+.testimonial img:hover{
+    margin-left: 1rem; 
+ }
+.contenedor{
+    max-width: 120rem;/*Ancho del contenedor */
+   /* margin-top:0 ;
+    margin-right:auto ;
+    margin-bottom: 0;
+    margin-left:auto ;*/
+    margin:0 auto;/*0 auto 0 autoSentidon de las manecillas del reloj */
+}
+.slide img{
+
+    max-width: 100%;
+    display:block;
+margin:auto;
+
+
+}
+contenido-centrado{
+    max-width: 80rem;
+}
+/* Encabezado más sobre nosotros
+.encabezado2{
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem; */
+.iconos-nosotros{
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconos-anuncio{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icono{
+    flex-basis: calc(33.3% - 1rem );
+    text-align: center;
+}
+
+.icono p{
+    color: #f5f5f5;
+}
+.icono h3{
+    text-transform: uppercase;
+}
+/*Seccion de casas y apartamentos en venta*/
+.contenedor-anuncios{
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.anuncio{
+    /*grow,shrink,basis*/
+    flex: 0 0 calc(33.3% - 1rem);
+    /*flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(33.3% - 1rem) ;*/
+    /*border-style: solid;
+    border-color: #b5b5b5;
+    border-width: .1rem;*/
+    border: .1rem solid #b5b5b5;
+    background: #f5f5f5;
+    margin-bottom: 2rem;
+}
+.contenido-anuncio{
+    padding: 2rem;
+   
+}
+
+
+
+.contenido-anuncio h3, .contenido-anuncio p{
+    margin: 0;
+}
+
+
+
+
+.precio{
+    color: #71b100;
+    font-weight: 700;
+}
+.iconos-caracteristicas{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.iconos-caracteristicas li{
+    display: flex;
+}
+.iconos-caracteristicas li img{
+    margin-right: 1rem;
+}
+
+.boton{
+color: #ffffff;
+font-weight: 700;
+text-decoration: none;
+font-size: 1.8rem;
+padding: 1rem 3rem;
+margin-top: 3rem;
+display: inline-block;
+text-align: center;
+border: none;
+cursor: pointer;
+}
+.boton-amarillo{
+    background-color: #E08709;
+
+}
+.boton-verde{
+ background-color: #71b100;
+}
+.ver-todas{
+    display: flex;
+    justify-content: flex-end;
+}
+/*Contacto*/
+.imagen-contacto{
+    background-image: url(../img/encuentra.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+}
+.contenido-contacto{
+    flex: 1;
+    color: #ffffff;
+}
+.contenido-contacto p{
+    font-size: 1.8rem;
+}
+/*Seccion inferior*/
+.seccion-inferior{
+        display: flex;
+        justify-content: space-between;
+}
+.seccion-inferior .blog{
+    flex-basis: 60%;
+}
+.seccion-inferior .testimoniales{
+    flex-basis: calc(40% - 2rem) ;
+
+}
+.entrada-blog{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.entrada-blog .imagen-entrada{
+flex-basis: 40%;
+
+}
+.entrada-blog .texto-entrada{
+flex-basis: calc(60% - 3rem);
+}
+.texto-entrada h4{
+    margin: 0;
+    line-height: 1.4;
+}
+
+.texto-entrada a{
+    color: black;
+    text-decoration: none;
+}
+
+/*Pseudoelementos*/
+
+.texto-entrada h4::after{
+content:'';/*no permite copiar*/
+display: block;
+background-color: #71b100;
+width: 15rem;
+height: 1rem;
+margin-top: 1rem;
+}
+.texto-entrada span{
+    color: #E08709;
+}
+.testimonial{
+    background-color: #816c3e;
+    opacity: 0.8;
+    /*Este metodo es opcional
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;*/
+    border-radius: 2rem;
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: #ffffff;
+
+}
+.testimonial p{
+    text-align: right;
+}
+.testimonial blockquote{
+    font-weight: 300;
+    padding-left: 5rem;
+}
+.testimonial blockquote::before{
+    content: '';
+    background-image: url(../img/comilla.svg);
+    display: block;
+    width: 5rem;
+    height: 5rem;
+
+}
+
+/*Footer*/
+
+.site-footer{
+    background-color: #333333;
+
+}
+.contenido-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    align-items: center;
+}
+.copyright{
+color: #ffffff;
+}
+/*Documeto:Nosotros*/
+.contenedor-nosotros{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+
+}
+.texto-nosotros h2{
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0 3rem 0;
+}
+
+.iconos-caracteristicas-anuncio{
+    list-style: none;
+    padding: 0;
+   
+    display: flex;
+    justify-content: space-evenly;
+}
+.iconos-caracteristicas-anuncio li{
+    display: flex;
+    margin-right: 10rem;
+}
+
+.iconos-caracteristicas-anuncio li p{
+   
+    margin-left: 2rem;
+}
+
+.iconos-caracteristicas-anuncio li img{
+    margin-right: 1rem;
+}
+
+
+.contenido-anuncio1{
+    padding: 2rem;
+    padding-left: 0rem;
+}
+.icono-anuncio{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.precio1 p{
+
+    margin-top: 2.5rem;
+}
+
+
+
+.entrada-blog1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.entrada-blog1 .imagen-entrada1{
+flex-basis: 40%;
+}
+.entrada-blog1 .texto-entrada1{
+flex-basis: calc(60% - 3rem);
+}
+.texto-entrada1 h4{
+    margin-right: 25rem;
+    line-height: 1.4;
+}
+
+.texto-entrada1 p{
+    margin-right: 25rem;
+   
+}
+
+.texto-entrada1 a{
+    color: black;
+    text-decoration: none;
+}
+
+.texto-entrada1 h4::after{
+    content:'';/*no permite copiar*/
+    display: block;
+    background-color: #71b100;
+    width: 15rem;
+    height: 1rem;
+    margin-top: 1rem;
+    }
+.texto-entrada1 span{
+        color: #E08709;
+    }
+    /*Contacto*/
+    label{
+        display: block;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: black;
+    }
+    legend{
+        font-size: 2rem;
+        color: #6d6161;
+    }
+  input:not([type="submit"]),
+   textarea,
+   select{
+
+    padding: 1rem;
+    display: block;
+    width: 97%;
+    background-color: #e1e1e1;
+    margin-bottom: 2rem;
+    border:none;
+    border-radius: 1rem;
+
+  }
+
+  textarea{
+      height: 20rem;
+  }
+
+  select{
+      width: 100%;
+  }
+
+  .contacto p{
+    font-size: 1.4rem;
+    color: #4f4f4f;
+
+  }
+
+  .forma-radios{
+      display: flex;
+      justify-content: space-between;
+      max-width: 30rem;
+      align-items: center;
+  }
+  input[type="radio"]{
+      width: auto;
+      margin-bottom: 0;
+  }
+
+
+  *{box-sizing:border-box;}
+
+		.container{
+			width:95%;
+			max-width:900px;
+			padding:32px 64px;
+			margin:auto;
+		}
+
+		.social{
+			/*las imágenes usadas tienen width de 48px*/
+			width:48px;
+			position:fixed;
+			top:50px;
+			right:0;
+		}
+
+		/* Extra centrado vertical*/
+
+		.social{
+			/*border:1px solid #000;*/
+			top:50%;
+			height:205px;
+			/*para poner height 192 deberíamos haber indicado en el reset de estilos font-size:0;*/
+			margin-top:-100px;
+		}
